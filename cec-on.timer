@@ -1,5 +1,5 @@
 [Unit]
-Description=Turn on cec controlled TV 
+Description=Turn on CEC controlled device 
 
 [Timer]
 OnCalendar=Mon,Tue,Wed,Thu,Fri *-*-* 7:00:00

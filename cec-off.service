@@ -1,0 +1,6 @@
+[Unit]
+Description=Turns off cec controlled TV 
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cec-ctl --standby -t0 

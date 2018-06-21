@@ -1,0 +1,8 @@
+[Unit]
+Description=Turn on cec controlled TV 
+
+[Timer]
+OnCalendar=Mon,Tue,Wed,Thu,Fri *-*-* 7:00:00
+
+[Install]
+WantedBy=timers.target

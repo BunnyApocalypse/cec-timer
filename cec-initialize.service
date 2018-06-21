@@ -1,0 +1,10 @@
+[Unit]
+Description=initialize cec device
+
+[Service]
+Type=oneshot
+Execstart=/usr/bin/cec-ctl --playback
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

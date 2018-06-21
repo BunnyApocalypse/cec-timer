@@ -1,0 +1,6 @@
+[Unit]
+Description=Turns on dashboard
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cec-ctl --image-view-on -t0

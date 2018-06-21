@@ -1,6 +1,7 @@
 [Unit]
 Description=Turns off CEC controlled device 
 Requires=cec-initialize.service
+After=cec-initialize.service
 
 [Service]
 Type=oneshot

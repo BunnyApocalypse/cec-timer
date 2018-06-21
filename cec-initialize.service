@@ -1,9 +1,7 @@
 [Unit]
 Description=Initialize CEC device
-PartOf=cec-on.service cec-off.service
-Before=cec-on.service cec-off.service
 
 [Service]
 Type=oneshot
-Execstart=/usr/bin/cec-ctl --playback
+ExecStart=/usr/bin/cec-ctl --playback
 RemainAfterExit=yes

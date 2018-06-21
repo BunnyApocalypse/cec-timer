@@ -1,6 +1,6 @@
 [Unit]
 Description=Turns on CEC controlled device 
-After=cec-initialize.service
+Requires=cec-initialize.service
 
 [Service]
 Type=oneshot

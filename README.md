@@ -1,11 +1,11 @@
 # cec-timer
 
-cec-timer is a set of system d timers and services that will turn off and on cec controlled TVs at specific times, it was designed to be used on Fedora using a Raspberry Pi 3 and uses cec-ctl to control the cec device.
+cec-timer is a set of systemd timers and services that will turn off and on cec controlled TVs at specific times, it was designed to be used on Fedora using a Raspberry Pi 3 and uses cec-ctl to control the cec device.
 
 ## How to use
 
 * Enable cec on your TV, it may go by different names depending on the vendor, a list of names and a guide can be found [here](https://www.howtogeek.com/207186/how-to-enable-hdmi-cec-on-your-tv-and-why-you-should)
-* Enable the system d timers and initialization service `systemctl enable cec-on.timer cec-off.timer cec-initialize.service` 
+* Enable the systemd timers and initialization service `systemctl enable cec-on.timer cec-off.timer cec-initialize.service` 
 * Either reboot or `systemctl start cec-initialize.service` and the tv should turn on and off at the times specified by the timer files
 
 ## Configuration
